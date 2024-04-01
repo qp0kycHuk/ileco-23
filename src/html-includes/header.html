@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Эко-23</title>
+</head>
+
+<body class="scroll-top">
+
+  <header class="header">
+    <div class="flex items-center">
+      <div class="lg:hidden mr-4">
+        <button class="btn btn-text btn-primary" data-toggle-link="header-menu">
+          <c-icon class="icon text-3.5xl text-default opacity-60" href="img/icons.svg#menu"></c-icon>
+        </button>
+      </div>
+      <a href="/" class="block w-21 lg:w-30">
+        <img src="../img/logo.svg" alt="">
+      </a>
+      <div class="mx-4 md:mx-8 h-6 w-px bg-default/20 max-md:hidden"></div>
+      <div class="opacity-60 text-sm max-md:hidden">
+        Экологическое сопровождение <br>
+        предприятий по всей России
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4 max-lg:hidden">
+      <c-icon class="icon text-2xl opacity-50" href="img/icons.svg#map-point"></c-icon>
+      <div>
+        <div class="text-sm opacity-80">
+          г. Краснодар, ул. Рождественская набережная, 45, оф. 2
+        </div>
+        <div class="relative">
+          <button class="btn btn-text btn-sec " data-toggle-link="address-menu">
+            <span class="underline decoration-dashed underline-offset-4 decoration-from-font font-base">
+              Еще 3 адреса
+            </span>
+          </button>
+          <div class="address-menu" id="address-menu">
+            <div class="flex items-center gap-2">
+              <c-icon class="icon text-xl text-sec" href="img/icons.svg#map-point"></c-icon>
+              <div class="font-semibold">Мы в Ростове</div>
+            </div>
+            <div class="mt-2">г. Ростов ул. Нансена, 103/1</div>
+
+            <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+            <div class="flex items-center gap-2">
+              <c-icon class="icon text-xl text-darkgreen" href="img/icons.svg#map-point"></c-icon>
+              <div class="font-semibold">Мы в Ставрополье</div>
+            </div>
+            <div class="mt-2">
+              Ставропольский край, г. Георгиевск,
+              ул. Калиниа, 97, оф.1
+            </div>
+
+            <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+            <div class="flex items-center gap-2">
+              <c-icon class="icon text-xl text-sand" href="img/icons.svg#map-point"></c-icon>
+              <div class="font-semibold">Мы в Санкт-Петербурге</div>
+            </div>
+            <div class="mt-2">
+              г. Санкт-Петербург, ул. Крыленко, 1, оф. 1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4 sm:gap-6">
+      <%= require('./social.html')() %>
+      <%= require('./header-phone.html')() %>
+    </div>
+
+  </header>
+
+  <div class="nav-menu z-3" id="header-menu">
+    <div class="sticky top-0">
+      <button class="btn btn-icon btn-sec absolute right-2 top-2 rounded-lg btn-sm max-sm:hidden" data-toggle-link="header-menu">
+        <c-icon class="icon text-xs text-default" href="img/icons.svg#cross"></c-icon>
+        <div class="absolute -inset-4"></div>
+      </button>
+    </div>
+
+    <header class="header sm:hidden">
+      <div class="flex items-center">
+        <div class="lg:hidden mr-4">
+          <button class="btn btn-text btn-primary" data-toggle-link="header-menu">
+            <c-icon class="icon text-3.5xl text-default opacity-60" href="img/icons.svg#circle-cross"></c-icon>
+          </button>
+        </div>
+        <a href="/" class="block w-21 lg:w-30">
+          <img src="../img/logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="flex items-center gap-4 sm:gap-6">
+        <%= require('./social.html')() %>
+        <%= require('./header-phone.html')() %>
+      </div>
+    </header>
+
+    <a href="javascript:;" class="btn btn-primary justify-start py-5 px-4 -mx-4">
+      <span class="text-default font-base font-normal">О компании</span>
+    </a>
+    <a href="javascript:;" class="btn btn-primary justify-start py-5 px-4 -mx-4">
+      <span class="text-default font-base font-normal">Сертификаты и лицензии</span>
+    </a>
+    <a href="javascript:;" class="btn btn-primary justify-start py-5 px-4 -mx-4">
+      <span class="text-default font-base font-normal">Новости</span>
+    </a>
+    <a href="javascript:;" class="btn btn-primary justify-start py-5 px-4 -mx-4">
+      <span class="text-default font-base font-normal">Контакты</span>
+    </a>
+
+    <div class="mt-12 mb-8 text-xl fon-alt font-semibold">
+      Услуги
+    </div>
+    <div class="p-4 bg-default/5 border border-default/10 rounded-xl group mb-2" data-toggle-cover>
+      <div class="flex items-center" data-toggle-link>
+        <div class="text-lg font-alt font-semibold ">Отходы</div>
+        <c-icon class="icon text-sm ml-auto transition group-[.toggle-active]:-rotate-90" href="img/icons.svg#to-right"></c-icon>
+      </div>
+      <div data-toggle-content data-toggle-static class="hidden group-[.toggle-active]:block mt-4">
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Паспорта отходов</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Лицензия на обращение с отходами</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ПНООЛР</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Инвентаризация отходов</span>
+        </a>
+      </div>
+    </div>
+    <div class="p-4 bg-default/5 border border-default/10 rounded-xl group mb-2" data-toggle-cover>
+      <div class="flex items-center" data-toggle-link>
+        <div class="text-lg font-alt font-semibold ">Воздух</div>
+        <c-icon class="icon text-sm ml-auto transition group-[.toggle-active]:-rotate-90" href="img/icons.svg#to-right"></c-icon>
+      </div>
+      <div data-toggle-content data-toggle-static class="hidden group-[.toggle-active]:block mt-4">
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ПДВ / НДВ</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">СЗЗ</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">НМУ</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ПГОУ</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Инвентаризация источников</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ОВОС</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Парниковые газы</span>
+        </a>
+      </div>
+    </div>
+    <div class="p-4 bg-default/5 border border-default/10 rounded-xl group mb-2" data-toggle-cover>
+      <div class="flex items-center" data-toggle-link>
+        <div class="text-lg font-alt font-semibold ">
+          Экологическое
+          сопровождение
+        </div>
+        <c-icon class="icon text-sm ml-auto transition group-[.toggle-active]:-rotate-90" href="img/icons.svg#to-right"></c-icon>
+      </div>
+      <div data-toggle-content data-toggle-static class="hidden group-[.toggle-active]:block mt-4">
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Паспорта отходов</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Разработка СЗЗ</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Разработка ПМ ООС</span>
+        </a>
+      </div>
+    </div>
+    <div class="p-4 bg-default/5 border border-default/10 rounded-xl group" data-toggle-cover>
+      <div class="flex items-center" data-toggle-link>
+        <div class="text-lg font-alt font-semibold ">Вода</div>
+        <c-icon class="icon text-sm ml-auto transition group-[.toggle-active]:-rotate-90" href="img/icons.svg#to-right"></c-icon>
+      </div>
+      <div data-toggle-content data-toggle-static class="hidden group-[.toggle-active]:block mt-4">
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ЗСО</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">НДС</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">Паспорт водного хозяйства (ПВХ)</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal"> Договор о предоставлении
+            водного объекта в пользование</span>
+        </a>
+        <a href="javascript:;" class="btn btn-primary justify-start py-2.5 px-4 -mx-4">
+          <span class="text-default font-base font-normal">ОВБР</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-menu-shadow"></div>
+
+  <header class="nav">
+    <button class="btn btn-sec gap-2 max-sm:btn-text sm:bg-default/5 btn-sm rounded-lg sm:px-4" data-toggle-link="nav-menu">
+      <c-icon class="icon text-sec max-sm:text-2xl" href="img/icons.svg#widget"></c-icon>
+      <span class="text-default font-base font-medium max-sm:hidden">Наши услуги</span>
+      <span class="text-default font-base font-medium sm:hidden">Услуги</span>
+    </button>
+    <a href="javascript:;" class="nav-item">О компании <span class="max-lg:hidden">ЭКО-23</span></a>
+    <a href="javascript:;" class="nav-item max-lg:hidden">Сертификаты и лицензии</a>
+    <a href="javascript:;" class="nav-item max-sm:hidden">Новости</a>
+    <a href="javascript:;" class="nav-item">Контакты</a>
+  </header>
+
+  <div class="relative">
+
+    <div class="nav-menu z-3" id="nav-menu">
+      <div class="sticky top-0">
+        <button class="btn btn-icon btn-sec absolute right-2 top-2 rounded-lg btn-sm max-sm:hidden" data-toggle-link="nav-menu">
+          <c-icon class="icon text-xs text-default" href="img/icons.svg#cross"></c-icon>
+          <div class="absolute -inset-4"></div>
+        </button>
+      </div>
+      <header class="header sm:hidden">
+        <div class="flex items-center">
+          <div class="lg:hidden mr-4">
+            <button class="btn btn-text btn-primary" data-toggle-link="nav-menu">
+              <c-icon class="icon text-3.5xl text-default opacity-60" href="img/icons.svg#circle-cross"></c-icon>
+            </button>
+          </div>
+          <a href="/" class="block w-21 lg:w-30">
+            <img src="../img/logo.svg" alt="">
+          </a>
+        </div>
+
+        <div class="flex items-center gap-4 sm:gap-6">
+          <%= require('./social.html')() %>
+          <%= require('./header-phone.html')() %>
+        </div>
+      </header>
+      <div class="lg:px-12 py-9">
+        <div class="gap-8 flex max-lg:flex-col">
+          <div class="basis-1/4">
+            <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Отходы</div>
+            <div class="flex flex-col gap-5">
+              <a href="javascript:;" class="text-sm">Паспорта отходов</a>
+              <a href="javascript:;" class="text-sm">
+                Лицензия на обращение
+                с отходами
+              </a>
+              <a href="javascript:;" class="text-sm">ПНООЛР</a>
+              <a href="javascript:;" class="text-sm">Инвентаризация отходов</a>
+            </div>
+          </div>
+          <div class="w-px shrink-0 bg-default/20 max-lg:hidden"></div>
+          <div class="basis-1/4">
+            <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Воздух</div>
+            <div class="flex flex-col gap-5">
+              <a href="javascript:;" class="text-sm">ПДВ / НДВ</a>
+              <a href="javascript:;" class="text-sm">СЗЗ</a>
+              <a href="javascript:;" class="text-sm">НМУ</a>
+              <a href="javascript:;" class="text-sm">ПГОУ</a>
+              <a href="javascript:;" class="text-sm">Инвентаризация источников</a>
+              <a href="javascript:;" class="text-sm">ОВОС</a>
+              <a href="javascript:;" class="text-sm">Парниковые газы</a>
+            </div>
+          </div>
+          <div class="w-px shrink-0 bg-default/20 max-lg:hidden"></div>
+          <div class="basis-1/4">
+            <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Вода</div>
+            <div class="flex flex-col gap-5">
+              <a href="javascript:;" class="text-sm">ЗСО</a>
+              <a href="javascript:;" class="text-sm">НДС</a>
+              <a href="javascript:;" class="text-sm">Паспорт водного хозяйства (ПВХ)</a>
+              <a href="javascript:;" class="text-sm">
+                Договор о предоставлении
+                водного объекта в пользование
+              </a>
+              <a href="javascript:;" class="text-sm">ОВБР</a>
+            </div>
+          </div>
+          <div class="w-px shrink-0 bg-default/20 max-lg:hidden"></div>
+          <div class="basis-1/4">
+            <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">
+              Экологическое
+              сопровождение
+            </div>
+            <div class="flex flex-col gap-5">
+              <a href="javascript:;" class="text-sm">Паспорта отходов</a>
+              <a href="javascript:;" class="text-sm">Разработка СЗЗ</a>
+              <a href="javascript:;" class="text-sm">Разработка ПМ ООС</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-default/5 rounded-2xl flex gap-4 lg:items-center justify-between max-lg:flex-col px-4 lg:px-12 py-6 lg:py-3">
+        <div class="block w-24 max-lg:hidden">
+          <img src="../img/logo.svg" alt="">
+        </div>
+        <a href="javascript:;" class="btn btn-text btn-primary gap-2 justify-start">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#email"></c-icon>
+          <span class="font-normal font-base text-default">info@ileco-23.ru</span>
+        </a>
+        <div class="text-sm">
+          ПН-ПТ – с 9.00 – 18.00 <br class="lg:hidden"> (перерыв с 13.00 до 14.00) <br>
+          СБ-ВС – выходной
+        </div>
+        <div class="flex items-center gap-6">
+          <%= require('./social.html')() %>
+          <%= require('./header-phone.html')() %>
+        </div>
+      </div>
+    </div>
+    <div class="nav-menu-shadow"></div>
+  </div>

@@ -7,6 +7,7 @@ import tab from 'npm-kit-tab'
 import toggle from 'npm-kit-toggle'
 import ripple from '@qpokychuk/ripple'
 import swiper from './swiper'
+import { throttle } from 'throttle-debounce'
 
 import '../scss/index.scss'
 
@@ -27,4 +28,10 @@ function loadHandler() {
   ripple.deAttach('.btn-text')
 
   swiper.init()
+  scrollHandler()
+  window.addEventListener('scroll', throttle(1000 / 60, scrollHandler))
+}
+
+function scrollHandler() {
+  document.body.classList.toggle('scroll-top', window.scrollY === 0)
 }

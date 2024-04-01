@@ -1,14 +1,11 @@
 const elementsSizes = {
   xs: '24px',
   sm: '32px',
-  base: '50px',
+  base: '54px',
   lg: '60px',
   xl: '72px',
 }
 
-const headingStyles = {
-  fontWeight: '500',
-}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -39,8 +36,12 @@ module.exports = {
       red: withOpacity('--red-rgb'),
       green: withOpacity('--green-rgb'),
       yellow: withOpacity('--yellow-rgb'),
+      darkgreen: withOpacity('--darkgreen-rgb'),
+      sand: withOpacity('--sand-rgb'),
       white: withOpacity('--white-rgb'),
       black: withOpacity('--black-rgb'),
+      whatsapp: withOpacity('--whatsapp-rgb'),
+      telegram: withOpacity('--telegram-rgb'),
       l1: withOpacity('--bg1-rgb'),
       l2: withOpacity('--bg2-rgb'),
       l3: withOpacity('--bg3-rgb'),
@@ -57,7 +58,12 @@ module.exports = {
       spacing: {
         [15]: 15 * 4 / 16 + 'rem',
         [18]: 18 * 4 / 16 + 'rem',
+        [21]: 21 * 4 / 16 + 'rem',
+        [30]: 30 * 4 / 16 + 'rem',
         [65]: '16.25rem'
+      },
+      lineHeight: {
+        'xs': 1.1
       },
       fontSize: {
         '1.5xl': ['1.375rem', '1.35'],

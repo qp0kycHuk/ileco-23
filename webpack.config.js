@@ -66,9 +66,9 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        include: path.resolve(__dirname, 'src/html-includes'),
-        use: ['raw-loader'],
-      },
+        loader: "underscore-template-loader",
+
+      }
     ],
   },
   plugins: [

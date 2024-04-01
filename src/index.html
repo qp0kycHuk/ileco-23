@@ -1,17 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<%= require('./html-includes/header.html')() %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web developer</title>
-</head>
 
-<body>
-  <section class="started">
 
-  </section>
-</body>
 
-</html>
+<section class="started">
+  <div class="started-image">
+    <picture>
+      <source media="(min-width: 609.98px)" srcset="img/started-image.png">
+      <img src="img/started-image-mobile.png" alt="">
+    </picture>
+  </div>
+  <img src="img/started-mobile-right.png" alt="" class="started-mobile-right">
+  <div class="started-content">
+    <div class="title">
+      Комплексное экологическое <br>
+      сопровождение предприятий
+    </div>
+    <div class="mt-7 sm:mt-10 max-sm:text-sm">
+      Разработка и согласование проектов природоохранной <br class="max-sm:hidden">
+      документации всех видов
+    </div>
+    <div class="flex gap-4 sm:gap-6 mt-9 sm:mt-15 max-sm:flex-col">
+      <button class="btn btn-fill btn-gradient rounded-xl">Получить расчет стоимости</button>
+      <button class="btn btn-fill btn-sec rounded-xl gap-3">
+        <c-icon class="icon text-2xl" href="img/icons.svg#user-id"></c-icon>
+        Консультация специалиста
+      </button>
+    </div>
+    <div class="mt-10 flex flex-col gap-6 sm:gap-8">
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-sec" href="img/icons.svg#message-dialog"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Без посредников
+          </div>
+          <div class="opacity-80 max-sm:text-sm">собственная аккредитованная лаборатория</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#ruble"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Мы поможем вам
+          </div>
+          <div class="opacity-80 max-sm:text-sm">избежать штрафов и пройти плановые проверки</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-sec" href="img/icons.svg#shield-check"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Даем гарантию
+          </div>
+          <div class="opacity-80 max-sm:text-sm">согласования документов в органах экологического контроля</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-[1000px]"></section>
+
+
+<%= require('./html-includes/footer.html')() %>
