@@ -33,5 +33,7 @@ function loadHandler() {
 }
 
 function scrollHandler() {
-  document.body.classList.toggle('scroll-top', window.scrollY === 0)
+  const rect = document.querySelector('.nav')?.getBoundingClientRect()
+
+  document.body.classList.toggle('scroll-top', rect?.top !== 0)
 }
