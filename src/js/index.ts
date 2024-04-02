@@ -23,9 +23,9 @@ function loadHandler() {
   fancybox.init()
   phonemask.init('[type="tel"]')
 
-  ripple.attach('.btn')
-  ripple.attach('.waved')
-  ripple.deAttach('.btn-text')
+  // ripple.attach('.btn')
+  // ripple.attach('.waved')
+  // ripple.deAttach('.btn-text')
 
   swiper.init()
   scrollHandler()

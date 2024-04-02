@@ -36,7 +36,10 @@ module.exports = {
       red: withOpacity('--red-rgb'),
       green: withOpacity('--green-rgb'),
       yellow: withOpacity('--yellow-rgb'),
-      darkgreen: withOpacity('--darkgreen-rgb'),
+      darkgreen: {
+        '1': withOpacity('--darkgreen-1-rgb'),
+        '2': withOpacity('--darkgreen-2-rgb')
+      },
       sand: withOpacity('--sand-rgb'),
       white: withOpacity('--white-rgb'),
       black: withOpacity('--black-rgb'),
@@ -57,13 +60,18 @@ module.exports = {
       btnSize: elementsSizes,
       spacing: {
         [15]: 15 * 4 / 16 + 'rem',
+        [17]: 17 * 4 / 16 + 'rem',
         [18]: 18 * 4 / 16 + 'rem',
         [21]: 21 * 4 / 16 + 'rem',
         [30]: 30 * 4 / 16 + 'rem',
+        [46]: 46 * 4 / 16 + 'rem',
         [65]: '16.25rem'
       },
       lineHeight: {
         'xs': 1.1
+      },
+      borderRadius: {
+        '4xl': '2rem'
       },
       fontSize: {
         '1.5xl': ['1.375rem', '1.35'],
