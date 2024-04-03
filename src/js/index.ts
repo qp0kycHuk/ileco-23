@@ -7,6 +7,7 @@ import tab from 'npm-kit-tab'
 import toggle from 'npm-kit-toggle'
 import ripple from '@qpokychuk/ripple'
 import swiper from './swiper'
+import animations from './animations'
 import { throttle } from 'throttle-debounce'
 
 import '../scss/index.scss'
@@ -23,9 +24,11 @@ function loadHandler() {
   fancybox.init()
   phonemask.init('[type="tel"]')
 
-  // ripple.attach('.btn')
-  // ripple.attach('.waved')
-  // ripple.deAttach('.btn-text')
+  ripple.attach('.btn')
+  ripple.attach('.waved')
+  ripple.deAttach('.btn-text')
+
+  animations.init()
 
   swiper.init()
   scrollHandler()

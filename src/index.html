@@ -1,8 +1,5 @@
 <%= require('./html-includes/header.html')() %>
 
-
-
-
 <section class="started">
   <div class="started-image">
     <picture>
@@ -62,104 +59,111 @@
   </div>
 </section>
 
+<!-- Наши направления -->
 <section class="p-section relative">
-  <div class="title mb-6 sm:mb-15">Наши направления</div>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-    <div class="p-4 card flex flex-col rounded-4xl">
-      <div class="py-6 lg:p-6 flex-grow flex flex-col">
-        <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
-          Лабораторные
-          исследования
-        </div>
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <img src="img/sheets/group.png" alt="" data-parallax class="absolute sheet top-0 right-[-868px] max-sm:top-[-180px] -rotate-12">
+    <img src="img/sheets/group.png" alt="" data-parallax class="absolute sheet -top-12 left-[-957px] max-lg:hidden">
+  </div>
+  <div class="relative">
+    <div class="title mb-6 sm:mb-15">Наши направления</div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+      <div class="p-4 card flex flex-col rounded-4xl">
+        <div class="py-6 lg:p-6 flex-grow flex flex-col">
+          <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
+            Лабораторные
+            исследования
+          </div>
 
-        <div class="flex flex-col gap-3 mt-auto">
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Отходы</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Воздух</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Вода</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
-            <div class="font-medium">Смотреть все услуги</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
+          <div class="flex flex-col gap-3 mt-auto">
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Отходы</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Воздух</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Вода</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
+              <div class="font-medium">Смотреть все услуги</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+          </div>
+        </div>
+        <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
+          <img src="img/test/test-1.jpg" alt="" class="absolute-fit object-cover">
         </div>
       </div>
-      <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
-        <img src="img/test/test-1.jpg" alt="" class="absolute-fit object-cover">
-      </div>
-    </div>
-    <div class="p-4 card flex flex-col rounded-4xl">
-      <div class="py-6 lg:p-6 flex-grow flex flex-col">
-        <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
-          Проектирование
-          экологической
-          документации
-        </div>
+      <div class="p-4 card flex flex-col rounded-4xl">
+        <div class="py-6 lg:p-6 flex-grow flex flex-col">
+          <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
+            Проектирование
+            экологической
+            документации
+          </div>
 
-        <div class="flex flex-col gap-3 mt-auto">
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Паспорта отходов</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">СЗЗ всех классов</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Разработка ПМ ООС</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
-            <div class="font-medium">Смотреть все услуги</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
+          <div class="flex flex-col gap-3 mt-auto">
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Паспорта отходов</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">СЗЗ всех классов</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Разработка ПМ ООС</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
+              <div class="font-medium">Смотреть все услуги</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+          </div>
+        </div>
+        <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
+          <img src="img/test/test-4.jpg" alt="" class="absolute-fit object-cover">
         </div>
       </div>
-      <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
-        <img src="img/test/test-4.jpg" alt="" class="absolute-fit object-cover">
-      </div>
-    </div>
-    <div class="p-4 card flex flex-col rounded-4xl">
-      <div class="py-6 lg:p-6 flex-grow flex flex-col">
-        <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
-          Экологическое
-          сопровождение
-        </div>
+      <div class="p-4 card flex flex-col rounded-4xl">
+        <div class="py-6 lg:p-6 flex-grow flex flex-col">
+          <div class="text-lg sm:text-1.5xl font-alt font-semibold mb-6">
+            Экологическое
+            сопровождение
+          </div>
 
-        <div class="flex flex-col gap-3 mt-auto">
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Постановка НВОС</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Проект НДС</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
-            <div class="font-medium">Декларация о ВОС</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
-          <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
-            <div class="font-medium">Смотреть все услуги</div>
-            <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
-          </a>
+          <div class="flex flex-col gap-3 mt-auto">
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Постановка НВОС</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Проект НДС</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec bg-default/5 rounded-xl text-default border border-default/10">
+              <div class="font-medium">Декларация о ВОС</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+            <a href="javascript:;" class="btn btn-sec btn-light rounded-xl">
+              <div class="font-medium">Смотреть все услуги</div>
+              <c-icon class="icon text-sm ml-auto " href="img/icons.svg#to-right"></c-icon>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
-        <img src="img/test/test-3.jpg" alt="" class="absolute-fit object-cover">
+        <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
+          <img src="img/test/test-3.jpg" alt="" class="absolute-fit object-cover">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- Согласование проектов -->
 <section class="p-section dude overflow-hidden">
   <div class="dude-content">
     <div class="title mb-8 sm:mb-12">Согласование проектов</div>
@@ -167,14 +171,7 @@
       С каждым годом проблем с экологией в России больше, и получить согласование от надзорных органов становится труднее. За 6 лет работы мы узнали тонкости при работе с Росприроднадзором, Минприроды и Роспотребнадзором - как правильно оформить экологическую документацию, в какой срок подать, как получить гарантированное согласование и не получить штраф.
     </div>
 
-    <div class="dude-image lg:hidden">
-      <img src="img/dude-image.png" alt="">
-
-      <img src="img/dude-poligon.png" alt="" class="dude-image-poligon dude-image-poligon-1">
-      <img src="img/dude-poligon.png" alt="" class="dude-image-poligon dude-image-poligon-2">
-    </div>
-
-    <div class="mt-9 px-6 py-8 rounded-4xl bg-[#D5F0C9] bg-opacity-50">
+    <div class="mt-9 px-6 py-8 rounded-4xl bg-[#D5F0C9] bg-opacity-50 max-lg:hidden">
       <div class="opacity-80">
         Наша цель – помочь каждой организации разобраться в экологии
         и успешно пройти любую проверку.
@@ -190,14 +187,37 @@
       </div>
     </div>
   </div>
-  <div class="dude-image max-lg:hidden">
-    <img src="img/dude-image.png" alt="">
+  <div class="dude-image ">
+    <div class="dude-image-picture ratio ratio-[545/490]">
+      <img src="img/dude-image.png" alt="" class="absolute-fit object-cover">
+    </div>
 
-    <img src="img/dude-poligon.png" alt="" class="dude-image-poligon dude-image-poligon-1">
-    <img src="img/dude-poligon.png" alt="" class="dude-image-poligon dude-image-poligon-2">
+    <div class="dude-poligon dude-poligon-1">
+      <img src="img/dude-poligon.png" alt="" class="dude-poligon-image" data-parallax="-100">
+    </div>
+    <div class="dude-poligon dude-poligon-2">
+      <img src="img/dude-poligon.png" alt="" class="dude-poligon-image" data-parallax="100">
+      <img src="img/sheets/single-1.png" alt="" data-parallax="200" class="absolute top-0 right-0">
+    </div>
+  </div>
+  <div class="mt-9 px-6 py-8 rounded-4xl bg-[#D5F0C9] bg-opacity-50 lg:hidden">
+    <div class="opacity-80">
+      Наша цель – помочь каждой организации разобраться в экологии
+      и успешно пройти любую проверку.
+    </div>
+    <div class="mt-6 flex items-center gap-4">
+      <div class="size-12 rounded-xl bg-[#D5F0C9] flex">
+        <div class="text-7xl font-semibold m-auto text-[#ABCF9B] pt-1.5">“</div>
+      </div>
+      <div>
+        <div class="font-alt font-semibold">Алла Борисовна М.</div>
+        <div class="">Генеральный директор</div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Цифры -->
 <section class="py-6">
   <div class="grid lg:grid-cols-3 gap-6">
     <div class="p-8 bg-default/5 rounded-4xl flex items-start">
@@ -236,213 +256,15 @@
 </section>
 
 
-<!-- Отзывы -->
-<section class="p-section overflow-hidden">
-  <div class="title mb-4 sm:mb-6">Более <span class="text-sec">1000</span> довольных клиентов</div>
-  <div class="font-alt text-lg sm:text-1.5xl mb-10 sm:mb-15">Подтверждают наш профессионализм</div>
+<%= require('./html-includes/reviews.html')() %>
 
-  <div class="swiper review-slider -mx-2 sm:-mx-3 -my-10 py-10 overflow-visible">
-    <div class="swiper-wrapper">
-      <% for(let i = 0; i < 3; i++) { %>
-      <div class="swiper-slide w-11/12 sm:w-1/2 lg:w-1/3 px-2 sm:px-3">
-        <div class="px-3 py-8 sm:p-8 card rounded-4xl">
-          <div class="flex items-center gap-3">
-            <img src="img/review-logo.png" alt="" class="h-14 object-scale-down">
-            <div>
-              <div class="font-alt text-lg sm:text-1.5xl font-semibold">ООО "Юнитполимер"</div>
-              <div class="flex items-center">
-                <c-icon class="icon text-lg text-yellow" href="img/icons.svg#star"></c-icon>
-                <c-icon class="icon text-lg text-yellow" href="img/icons.svg#star"></c-icon>
-                <c-icon class="icon text-lg text-yellow" href="img/icons.svg#star"></c-icon>
-                <c-icon class="icon text-lg text-yellow" href="img/icons.svg#star"></c-icon>
-                <c-icon class="icon text-lg text-default/40" href="img/icons.svg#star"></c-icon>
-              </div>
-            </div>
-          </div>
-          <div class="mt-6 line-clamp-2 max-sm:text-sm">
-            Основное направление деятельности
-            компании – производство упаковки
-          </div>
-          <div class="h-px my-5 sm:my-7 bg-default/10"></div>
-          <div class="font-alt text-lg sm:text-1.5xl font-semibold">Результат нашей работы</div>
-          <div class="line-clamp-3 mt-5 max-sm:text-sm">
-            Оперативно и качественно были
-            осуществлены работы по проведению
-            экологических измерений
-          </div>
-          <button class="mt-8 sm:mt-16 btn btn-gradient btn-fill rounded-xl max-sm:w-full">
-            Читать отзыв
-          </button>
-        </div>
-      </div>
-      <% } %>
-    </div>
+<!-- Полигон справа -->
+<section class="relative -z-[1] pointer-events-none py-[100lvh] -my-[100lvh]">
+  <div class="absolute inset-0" data-parallax="-150">
+    <img src="img/poligon-right.png" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 max-w-[80%]">
   </div>
 </section>
 
-<script>
-  new Swiper('.review-slider', {
-    slidesPerView: 'auto'
-  })
-</script>
-
-<div class="relative -z-[1]">
-  <img src="img/poligon-right.png" alt="" class="absolute right-0 top-0 -translate-y-1/2 max-w-[80%]">
-</div>
-
-<!-- Партнеры -->
-<section class="p-section">
-  <div class="title mb-10 sm:mb-15">Большой опыт <span class="text-sec">успешных</span> проектов</div>
-
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-5">
-    <% for(let i = 0; i < 15; i++) { %>
-    <div class="rounded-4xl bg-l3 border border-default/10">
-      <div class="flex flex-col items-center justify-center h-36 sm:h-46 py-6 px-8">
-        <img src="img/review-logo.png" alt="" class="h-14 sm:h-17 object-scale-down">
-        <div class="text-center font-semibold mt-4 sm:mt-6 max-sm:text-sm  ">
-          <div class="line-clamp-2">
-            ООО «Леруа Мерлен
-            Восток»
-          </div>
-        </div>
-      </div>
-    </div>
-    <% } %>
-  </div>
-</section>
-
-<section class="p-section bg-darkgreen-1 max-lg:hidden text-white">
-  <div class="gap-8 flex max-lg:flex-col">
-    <div class="basis-1/4">
-      <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Отходы</div>
-      <div class="flex flex-col gap-5">
-        <a href="javascript:;" class="text-sm">Паспорта отходов</a>
-        <a href="javascript:;" class="text-sm">
-          Лицензия на обращение
-          с отходами
-        </a>
-        <a href="javascript:;" class="text-sm">ПНООЛР</a>
-        <a href="javascript:;" class="text-sm">Инвентаризация отходов</a>
-      </div>
-    </div>
-    <div class="w-px shrink-0 bg-white/20 max-lg:hidden"></div>
-    <div class="basis-1/4">
-      <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Воздух</div>
-      <div class="flex flex-col gap-5">
-        <a href="javascript:;" class="text-sm">ПДВ / НДВ</a>
-        <a href="javascript:;" class="text-sm">СЗЗ</a>
-        <a href="javascript:;" class="text-sm">НМУ</a>
-        <a href="javascript:;" class="text-sm">ПГОУ</a>
-        <a href="javascript:;" class="text-sm">Инвентаризация источников</a>
-        <a href="javascript:;" class="text-sm">ОВОС</a>
-        <a href="javascript:;" class="text-sm">Парниковые газы</a>
-      </div>
-    </div>
-    <div class="w-px shrink-0 bg-white/20 max-lg:hidden"></div>
-    <div class="basis-1/4">
-      <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">Вода</div>
-      <div class="flex flex-col gap-5">
-        <a href="javascript:;" class="text-sm">ЗСО</a>
-        <a href="javascript:;" class="text-sm">НДС</a>
-        <a href="javascript:;" class="text-sm">Паспорт водного хозяйства (ПВХ)</a>
-        <a href="javascript:;" class="text-sm">
-          Договор о предоставлении
-          водного объекта в пользование
-        </a>
-        <a href="javascript:;" class="text-sm">ОВБР</a>
-      </div>
-    </div>
-    <div class="w-px shrink-0 bg-white/20 max-lg:hidden"></div>
-    <div class="basis-1/4">
-      <div class="text-1.5xl font-alt font-semibold mb-8 sm:mb-10">
-        Экологическое
-        сопровождение
-      </div>
-      <div class="flex flex-col gap-5">
-        <a href="javascript:;" class="text-sm">Паспорта отходов</a>
-        <a href="javascript:;" class="text-sm">Разработка СЗЗ</a>
-        <a href="javascript:;" class="text-sm">Разработка ПМ ООС</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-10 bg-darkgreen-2 text-white">
-  <div class="gap-8 flex max-lg:flex-col">
-    <div class="basis-1/4 flex flex-col">
-      <div class="flex items-center gap-2 text-primary">
-        <c-icon class="icon text-xl" href="img/icons.svg#map-point"></c-icon>
-        <div class="font-medium">Мы в Ростове</div>
-      </div>
-      <div class="text-sm my-5">г. Ростов ул. Нансена, 103/1</div>
-      <a href="javascript:;" class="font-semibold text-lg mt-auto">+7 (863) 303-56-53</a>
-    </div>
-    <div class="basis-1/4 flex flex-col">
-      <div class="flex items-center gap-2 text-primary">
-        <c-icon class="icon text-xl" href="img/icons.svg#map-point"></c-icon>
-        <div class="font-medium">Мы в Краснодаре</div>
-      </div>
-      <div class="text-sm my-5">
-        г. Краснодар, ул. Рождественская <br>
-        набережная, 45, оф. 2
-      </div>
-      <a href="javascript:;" class="font-semibold text-lg mt-auto">+7 (861) 205-53-36</a>
-    </div>
-    <div class="basis-1/4 flex flex-col">
-      <div class="flex items-center gap-2 text-primary">
-        <c-icon class="icon text-xl" href="img/icons.svg#map-point"></c-icon>
-        <div class="font-medium">Мы в Ставрополье</div>
-      </div>
-      <div class="text-sm my-5">
-        Ставропольский край, <br>
-        г. Георгиевск, ул. Калиниа, 97, оф.1
-      </div>
-      <a href="javascript:;" class="font-semibold text-lg mt-auto">+7 (8652) 20-56-53</a>
-    </div>
-    <div class="basis-1/4 flex flex-col">
-      <div class="flex items-center gap-2 text-primary">
-        <c-icon class="icon text-xl" href="img/icons.svg#map-point"></c-icon>
-        <div class="font-medium">Мы в Санкт-Петербурге</div>
-      </div>
-      <div class="text-sm my-5">
-        г. Санкт-Петербург, <br>
-        ул. Крыленко, 1, оф. 1
-      </div>
-      <a href="javascript:;" class="font-semibold text-lg mt-auto">+7 (952) 244-82-29</a>
-    </div>
-  </div>
-</section>
-
-<section class="py-10 bg-darkgreen-2 text-white border-t border-white/15">
-  <div class="flex gap-5 lg:items-center max-lg:flex-col justify-between">
-    <div class="flex items-center">
-      <a href="/" class="block w-21 lg:w-30">
-        <img src="img/logo.svg" alt="">
-      </a>
-      <div class="mx-4 md:mx-8 h-6 w-px bg-white/20 "></div>
-      <div class="opacity-60 text-sm max-md:text-xs">
-        Экологическое сопровождение <br>
-        предприятий по всей России
-      </div>
-    </div>
-
-    <a href="javascript:;" class="btn btn-text btn-primary gap-2 justify-start">
-      <c-icon class="icon text-2xl text-primary" href="img/icons.svg#email"></c-icon>
-      <span class="font-normal font-base text-white">info@ileco-23.ru</span>
-    </a>
-
-    <div class="text-sm">
-      ПН-ПТ – с 9.00 – 18.00 <br>
-      (перерыв с 13.00 до 14.00) <br>
-      СБ-ВС – выходной
-    </div>
-
-    <div class="flex items-center gap-4 sm:gap-6">
-      <%= require('./html-includes/social.html')() %>
-      <%= require('./html-includes/header-phone.html')() %>
-    </div>
-  </div>
-</section>
-
+<%= require('./html-includes/partners.html')() %>
 
 <%= require('./html-includes/footer.html')() %>

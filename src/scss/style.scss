@@ -123,16 +123,19 @@ body {
   font-weight: 600;
   font-family: theme('fontFamily.alt');
 
-  @media(hover) {
-    &:hover {
-      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.078);
+  &:not(.btn-text) {
+    @media(hover) {
+      &:hover {
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.078);
+      }
+
+      &:active {
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.078);
+
+      }
     }
   }
 
-  &:active {
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.078);
-
-  }
 }
 
 .header {
@@ -351,41 +354,58 @@ body:not(.scroll-top) .nav {
   }
 
   &-image {
-    margin  : -80px -80px -80px auto;
-    position: relative;
+    margin-left: auto;
+    position   : relative;
+    max-width  : 100%;
 
     @media(max-width:theme('screens.lg')) {
-      margin: 0 -40px;
+      margin-top: 40px;
     }
 
-    &-poligon {
-      position       : absolute;
+    &-picture {
+      position : relative;
+      width    : 545px;
+      max-width: 100%;
+
+      mask: url("../img/dude-mask.svg") no-repeat center / contain;
+
+    }
+  }
+
+  &-poligon {
+    position: absolute;
+
+    @media(max-width:theme('screens.sm')) {
+      width: 130px;
+    }
+
+    &-image {
       backdrop-filter: blur(10px);
       mask           : url('../img/poligon-mask.png') no-repeat center / contain;
+    }
+
+    &-1 {
+      left  : -45px;
+      bottom: 25px;
 
       @media(max-width:theme('screens.sm')) {
-        width: 120px;
+        bottom: 35px;
+        left  : -20px;
       }
+    }
 
-      &-1 {
-        left  : 0;
-        bottom: 80px;
+    &-2 {
+      right: -70px;
+      top  : 15px;
 
-        @media(max-width:theme('screens.sm')) {
-          bottom: 0;
-          left  : 10px;
-        }
-      }
-
-      &-2 {
-        right: 20px;
-        top  : 80px;
-
-        @media(max-width:theme('screens.sm')) {
-          top  : 0;
-          right: 10px;
-        }
+      @media(max-width:theme('screens.sm')) {
+        top  : 40px;
+        right: -30px;
       }
     }
   }
+}
+
+.sheet {
+  max-width: none;
 }

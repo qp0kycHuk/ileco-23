@@ -8,6 +8,20 @@
 
   }
 
+  .btn .ripple {
+    background: radial-gradient(var(--tw-btn-color-light) 0,
+        var(--tw-btn-color-light) 40%,
+        var(--tw-btn-color-light) calc(60% - 10px),
+        var(--tw-btn-color-light) 60%,
+        rgba(0, 0, 0, 0) calc(60% + 10px)),
+      radial-gradient(rgba(0, 0, 0, 0) 0,
+        var(--tw-btn-color-light) 40%,
+        rgba(0, 0, 0, 0) calc(60% - 10px),
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0) calc(60% + 10px));
+
+  }
+
   .btn-fill .ripple {
     background: radial-gradient(rgba(255, 255, 255, 0.1) 0,
         rgba(255, 255, 255, 0.2) 40%,
@@ -16,4 +30,5 @@
         rgba(0, 0, 0, 0) calc(60% + 10px));
 
   }
+
 }
