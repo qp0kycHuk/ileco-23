@@ -117,6 +117,14 @@ body {
       border: 1px solid theme('colors.default / 20%');
     }
   }
+
+  .poligon-mask {
+    mask: url('../img/poligon-mask.svg') no-repeat center / contain;
+  }
+
+  .poligon-mask-1 {
+    mask: url('../img/poligon-mask-1.svg') no-repeat center / contain;
+  }
 }
 
 .btn {
@@ -359,7 +367,9 @@ body:not(.scroll-top) .nav {
     max-width  : 100%;
 
     @media(max-width:theme('screens.lg')) {
-      margin-top: 40px;
+      margin-top : 40px;
+      margin-left: 0;
+
     }
 
     &-picture {
@@ -367,7 +377,7 @@ body:not(.scroll-top) .nav {
       width    : 545px;
       max-width: 100%;
 
-      mask: url("../img/dude-mask.svg") no-repeat center / contain;
+      mask: url("../img/poligon-mask.svg") no-repeat center / contain;
 
     }
   }
@@ -381,7 +391,7 @@ body:not(.scroll-top) .nav {
 
     &-image {
       backdrop-filter: blur(10px);
-      mask           : url('../img/poligon-mask.png') no-repeat center / contain;
+      mask           : url('../img/poligon-mask.svg') no-repeat center / contain;
     }
 
     &-1 {
@@ -408,4 +418,42 @@ body:not(.scroll-top) .nav {
 
 .sheet {
   max-width: none;
+}
+
+.work {
+  position: relative;
+
+  @media(max-width:theme('screens.lg')) {
+    padding-bottom: 400px;
+  }
+
+  @media(max-width:theme('screens.sm')) {
+    padding-bottom: calc(100% * 335 / 375);
+  }
+
+  &-image {
+    position: absolute;
+    left    : calc(50% - 380px);
+    bottom  : 0;
+
+    @media(max-width:theme('screens.lg')) {
+      right: 0;
+      left : auto;
+      width: 700px;
+    }
+
+    @media(max-width:theme('screens.sm')) {
+      left : -42%;
+      right: auto;
+      width: calc(100% * 604 / 375);
+    }
+
+    img {
+      max-width: none;
+
+      @media(max-width:theme('screens.lg')) {
+        width: 100%;
+      }
+    }
+  }
 }

@@ -67,11 +67,15 @@ module.exports = {
         [46]: 46 * 4 / 16 + 'rem',
         [65]: '16.25rem'
       },
+
       lineHeight: {
         'xs': 1.1
       },
       borderRadius: {
         '4xl': '2rem'
+      },
+      rotate: {
+        '360': '360deg'
       },
       fontSize: {
         '1.5xl': ['1.375rem', '1.35'],
