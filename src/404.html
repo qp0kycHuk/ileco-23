@@ -1,8 +1,23 @@
 <%= require('./html-includes/header.html')() %>
 
 
-<section class="not-found">
-
+<section class="not-found relative">
+  <div class="top-poligon">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image">
+    <img src="img/404-left.png" alt="" class="absolute sheet mr-80 right-1/2 top-0 max-sm:hidden" loading="lazy" data-parallax="-200">
+    <img src="img/404-right.png" alt="" class="absolute sheet ml-80 left-1/2 top-1/4 max-sm:hidden" loading="lazy" data-parallax>
+    <img src="img/404-left.png" alt="" class="absolute sheet left-1/4 top-0 sm:hidden max-sm:w-[150%]" loading="lazy" data-parallax="-200">
+  </div>
+  <div class="relative flex flex-col items-center text-center">
+    <div class="not-found-title">404</div>
+    <div class="mt-6 sm:mt-12">
+      Возможно, запрашиваемая Вами страница была перенесена или удалена. <br class="max-sm:hidden">
+      Либо Вы допустили небольшую опечатку при вводе адреса.
+    </div>
+    <div class="mt-6 sm:mt-18">
+      <a href="/" class="btn rounded-xl btn-fill btn-gradient">Вернуться на главную</a>
+    </div>
+  </div>
 </section>
 
 <%= require('./html-includes/footer.html')() %>

@@ -549,3 +549,55 @@ body:not(.scroll-top) .nav {
       url("../img/info-image-1.png") no-repeat center / 100% 100%;
   }
 }
+
+.not-found {
+  padding-top   : 180px;
+  padding-bottom: 220px;
+
+
+  @media(max-width:theme('screens.md')) {
+    padding-top   : 90px;
+    padding-bottom: 120px;
+  }
+
+  &-title {
+    font-size  : 230px;
+    line-height: 1;
+    font-family: theme('fontFamily.alt');
+    font-weight: 500;
+
+    @media(max-width:theme('screens.lg')) {
+      font-size: 180px;
+    }
+
+    @media(max-width:theme('screens.sm')) {
+      font-size: 130px;
+    }
+  }
+}
+
+.top-poligon {
+  position: absolute;
+  right   : 0;
+  top     : -145px;
+  height  : calc(100% + 145px);
+  width   : 100%;
+  overflow: hidden;
+
+
+  @media(max-width:theme('screens.lg')) {
+    top   : 0;
+    height: 100%;
+  }
+
+  &-image {
+    position: absolute;
+    right   : 0;
+    top     : 0;
+
+    @media(max-width:theme('screens.lg')) {
+      right: -40%;
+      top  : 145px;
+    }
+  }
+}
