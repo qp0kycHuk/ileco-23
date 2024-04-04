@@ -11,6 +11,7 @@ import animations from './animations'
 import { throttle } from 'throttle-debounce'
 
 import '../scss/index.scss'
+import ymaps from './ymaps'
 
 window.addEventListener('DOMContentLoaded', () => loadHandler())
 
@@ -23,6 +24,7 @@ function loadHandler() {
   theme.init()
   fancybox.init()
   phonemask.init('[type="tel"]')
+  ymaps.init()
 
   ripple.attach('.btn')
   ripple.attach('.waved')

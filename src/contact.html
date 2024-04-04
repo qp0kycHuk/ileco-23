@@ -1,0 +1,106 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="contact relative">
+  <div class="top-poligon">
+    <img src="img/contacts-poligon.png" alt="" class="top-poligon-image max-lg:hidden" loading="lazy">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image lg:hidden" loading="lazy">
+    <img src="img/404-left.png" alt="" class="absolute sheet left-1/4 top-0 sm:hidden max-sm:w-[150%]" loading="lazy" data-parallax="-200">
+  </div>
+  <div class="relative">
+    <div class="title mb-10 sm:mb-15">Контакты</div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card px-4 sm:px-8 py-12 rounded-4xl">
+        <div class="font-alt font-semibold text-1.5xl mb-7 sm:mb-9">Контактные данные</div>
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-primary" href="img/icons.svg#clock"></c-icon>
+          <div class="font-semibold">Режим работы</div>
+        </div>
+        <div class=" mt-3">Понедельник-Пятница </div>
+        <div class="font-bold text-lg ">с 09:00 - 18:00</div>
+        <div class="">(перерыв с 13.00 до 14.00)</div>
+        <div class="mt-5">Суббота - Воскресенье</div>
+        <div class="font-bold text-lg ">выходной</div>
+
+        <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-primary" href="img/icons.svg#email"></c-icon>
+          <div class="font-semibold">E-mail</div>
+        </div>
+        <a href="mailto:info@ileco-23.ru" class="mt-3 block">info@ileco-23.ru</a>
+
+        <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-primary" href="img/icons.svg#message-heart"></c-icon>
+          <div class="font-semibold">Социальные сети и мессенджеры</div>
+        </div>
+
+        <a href="javascript:;" class="btn btn-text gap-2 justify-start mt-5">
+          <div class="size-7 flex rounded-md sm:rounded-lg bg-whatsapp text-white">
+            <c-icon class="icon m-auto" href="img/icons.svg#whatsapp"></c-icon>
+          </div>
+          <span class="font-base font-normal"> +79002559454</span>
+        </a>
+        <a href="javascript:;" class="btn btn-text gap-2 justify-start mt-2">
+          <div class="size-7 flex rounded-md sm:rounded-lg bg-telegram text-white">
+            <c-icon class="icon m-auto" href="img/icons.svg#telegram"></c-icon>
+          </div>
+          <span class="font-base font-normal"> t.me/ileco23</span>
+        </a>
+        <button class="btn btn-fill btn-gradient mt-9 rounded-xl">Задать нам вопрос</button>
+
+      </div>
+
+      <div class="card px-4 sm:px-8 py-12 rounded-4xl">
+        <div class="font-alt font-semibold text-1.5xl mb-7 sm:mb-9">Наши представительства</div>
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-primary" href="img/icons.svg#map-point"></c-icon>
+          <div class="font-semibold">Мы в Краснодаре</div>
+        </div>
+        <div class="mt-2 leading-xs">
+          г. Краснодар, ул. Рождественская
+          набережная, 45, оф. 2
+        </div>
+        <a href="javascript:;" class="text-lg font-bold mt-3 block">+7 (861) 205-53-36</a>
+
+        <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-sec" href="img/icons.svg#map-point"></c-icon>
+          <div class="font-semibold">Мы в Ростове</div>
+        </div>
+        <div class="mt-2 leading-xs">г. Ростов ул. Нансена, 103/1</div>
+        <a href="javascript:;" class="text-lg font-bold mt-3 block">+7 (863) 303-56-53</a>
+
+        <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-darkgreen-1" href="img/icons.svg#map-point"></c-icon>
+          <div class="font-semibold">Мы в Ставрополье</div>
+        </div>
+        <div class="mt-2 leading-xs">
+          Ставропольский край, г. Георгиевск,
+          ул. Калиниа, 97, оф.1
+        </div>
+        <a href="javascript:;" class="text-lg font-bold mt-3 block">+7 (8652) 20-56-53</a>
+
+        <div class="w-full border-t border-dashed border-default opacity-20 my-3"></div>
+
+        <div class="flex items-center gap-2">
+          <c-icon class="icon text-xl text-sand" href="img/icons.svg#map-point"></c-icon>
+          <div class="font-semibold">Мы в Санкт-Петербурге</div>
+        </div>
+        <div class="mt-2 leading-xs">
+          г. Санкт-Петербург, ул. Крыленко, 1, оф. 1
+        </div>
+        <a href="javascript:;" class="text-lg font-bold mt-3 block">+7 (952) 244-82-29</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="map-inner" id="contact-map"></div>
+</section>
+
+<%= require('./html-includes/footer.html')() %>
