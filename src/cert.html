@@ -1,0 +1,26 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="relative p-section">
+  <div class="top-poligon">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image">
+  </div>
+  <div class="relative">
+    <div class="title mb-10 sm:mb-15">Сертификаты и лицензии</div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <% for(let i = 0; i < 10; i++) { %>
+      <div class="p-4 card rounded-4xl">
+        <div class="ratio ratio-[360/510] mb-4">
+          <img src="img/doc.png" alt="" class="absolute-fit object-contain">
+        </div>
+        <div class="my-auto text-center font-alt font-semibold">
+          Перечень определяемых компонентов
+          стр.03
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+
+<%= require('./html-includes/footer.html')() %>
