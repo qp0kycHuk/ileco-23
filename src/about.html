@@ -1,0 +1,165 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="started">
+  <div class="started-image">
+    <picture>
+      <source media="(min-width: 609.98px)" srcset="img/started-image.png">
+      <img src="img/started-image-mobile.png" alt="">
+    </picture>
+  </div>
+  <div class="started-bottom">
+    <img src="img/started-bottom.png" alt="" class="">
+  </div>
+  <img src="img/started-mobile-right.png" alt="" class="started-mobile-right">
+  <div class="started-content">
+    <div class="title">
+      О компании ЭКО-23
+    </div>
+    <div class="mt-7 sm:mt-10 max-sm:text-sm">
+      ООО «ЭКО-23» оказывает полный комплекс услуг в области <br class="max-sm:hidden">
+      лабораторных исследований и разработки экологической <br class="max-sm:hidden">
+      документации для предприятий различных сфер деятельности
+    </div>
+    <div class="flex gap-4 sm:gap-6 mt-9 sm:mt-15 max-sm:flex-col">
+      <button class="btn btn-fill btn-gradient rounded-xl">Связаться с нами</button>
+    </div>
+    <div class="mt-10 flex flex-col gap-6 sm:gap-8">
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-sec" href="img/icons.svg#message-dialog"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Без посредников
+          </div>
+          <div class="opacity-80 max-sm:text-sm">лабораторные анализы в собственном исследовательском центре</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#shield-check"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Защищаем от штрафов
+          </div>
+          <div class="opacity-80 max-sm:text-sm">чтобы ваше предприятие действовало в соответствии с законом</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <c-icon class="icon text-3.5xl text-sec" href="img/icons.svg#note-check"></c-icon>
+        <div>
+          <div class="font-alt text-lg sm:text-1.5xl font-semibold leading-xs text-gradient">
+            Ответственность
+          </div>
+          <div class="opacity-80 max-sm:text-sm">за согласование документов в Росприроднадзоре, Роспотребнадзоре, Минприроды</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative p-section">
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <img src="img/sheets/group.png" alt="" data-parallax class="absolute sheet top-0 right-[-868px] max-sm:top-[-180px] -rotate-12">
+    <img src="img/sheets/group.png" alt="" data-parallax class="absolute sheet -top-12 left-[-957px] max-lg:hidden">
+  </div>
+  <div class="relative">
+    <div class="title mb-10 sm:mb-15">Наши направления</div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <% for(let i = 0; i < 3; i++) { %>
+      <a href="javascript:;" class="p-4 pb-6 sm:pb-10 card rounded-4xl flex flex-col gap-6 sm:gap-8 btn-group">
+        <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
+          <img src="img/test/test-<%= i + 1 %>.jpg" alt="" class="absolute-fit object-cover">
+        </div>
+        <div class="sm:px-2 flex-grow flex flex-col items-start">
+          <div class="font-alt text-1.5xl leading-xs font-semibold">
+            ЭКОЛОГИЧЕСКОЕ
+            ПРОЕКТИРОВАНИЕ
+          </div>
+          <div class="mt-4 sm:mt-5 mb-5 sm:mb-9 opacity-80 line-clamp-4 max-sm:text-sm">
+            Разрабатываем и согласовываем
+            проектную документацию
+          </div>
+          <button class="mt-auto btn btn-fill btn-gradient rounded-xl">Подробнее о направлении</button>
+        </div>
+      </a>
+      <% } %>
+    </div>
+
+    <div class="mt-16 rounded-4xl bg-sand/20 px-10 py-12">
+      <div class="font-alt text-1.5xl font-semibold text-gradient uppercase">РАБОТАЕМ ПО ВСЕЙ РОССИИ</div>
+      <div class="mt-3 opacity-80">
+        Мы ведем услуги экологического сопровождения в каждом российском регионе
+      </div>
+    </div>
+
+    <div class="mt-16 flex gap-20">
+      <div>
+        <div class="opacity-80">
+          Меня зовут Андрей Човен. Я работаю в природоохранной отрасли с 2008 года. С самого начала работы я видел, с какими трудностями сталкиваются предприятия при подготовке и согласовании экологической документации. В 2010 году я понял, что могу превратить сложное взаимодействие с природоохранными органами в комфортный сервис, и создал свою компанию.
+        </div>
+        <div class="my-10 font-semibold">
+          В 2010 году я понял, что могу превратить сложное взаимодействие с природоохранными органами в комфортный сервис
+        </div>
+        <div class="opacity-80">
+          Собрал команду экспертов, которые работали «по разные стороны баррикад» в сфере экологии и знают процесс изнутри. Проектировщики, экологи и юристы моей команды детально понимают, какие требования предъявляют государственные контролирующие органы и насколько сложно предприятиям эти требования выполнять.
+        </div>
+      </div>
+      <div class="w-[500px] ratio ratio-[500/354] shrink-0 rounded-4xl overflow-hidden">
+        <img src="img/about-dude.png" alt="" class="absolute-fit object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative p-section">
+  <div class="title mb-8">Наша команда</div>
+  <div class="opacity-80 mb-10">
+    42 квалифицированных специалиста в области охраны труда и экологии и широкий спектр услуг <br>
+    позволяют нам оставаться востребованными на рынке уже более 10 лет
+  </div>
+
+  <div class="swiper team-slider -mx-3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide w-1/4 px-3">
+        <div class="card rounded-4xl p-4">
+          <div class="ratio ratio-[258/224] shrink-0 rounded-4xl overflow-hidden">
+            <img src="img/test/test-4.jpg" alt="" class="absolute-fit object-cover">
+          </div>
+          <div class="mt-5 px-4">
+            <div class="text-lg font-alt font-semibold text-gradient">Ковалевский Руслан</div>
+            <div class="mt-1 opacity-80">Лаборант</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  Аккредитованная лаборатория -->
+<section class="py-0 bg-primary/15 flex max-lg:flex-col items-center overflow-hidden">
+  <div class="p-section shrink-0">
+    <div class="title">
+      Аккредитованная <br class="max-sm:hidden">
+      лаборатория
+    </div>
+    <div class="mt-6 sm:mt-7">
+      Испытательная лаборатория ООО ЭКО-23 <br class="max-sm:hidden">
+      внесена в реестр аккредитованных лиц <br class="max-sm:hidden">
+      под номером RA.RU.21ОМ58
+    </div>
+    <button class="mt-10 max-sm:w-full btn btn-fill btn-gradient rounded-xl">Получить каталог</button>
+  </div>
+  <div class="lg:self-end max-sm:flex flex-col items-center max-sm:-mt-10 relative flex-grow">
+    <img src="img/credit.png" alt="" class="w-max max-w-[150%] sm:max-w-max ml-auto">
+
+
+    <div class="p-px poligon-mask absolute left-28 top-18 backdrop-blur max-sm:hidden" data-parallax="100">
+      <img src="img/dude-poligon.png" alt="" class="max-sm:w-40">
+    </div>
+    <img src="img/sheets/single-6.png" alt="" class="absolute left-0 sm:left-36 top-32" data-parallax="200">
+    <img src="img/sheets/single-3.png" alt="" class="absolute right-0 top-32 max-sm:hidden" loading="lazy" data-parallax="-200">
+    <img src="img/sheets/single-7.png" alt="" class="absolute left-1/2 -ml-12 sm:-ml-20 max-sm:w-24 bottom-8 sm:bottom-16" data-parallax="100">
+  </div>
+</section>
+
+<%= require('./html-includes/footer.html')() %>
