@@ -1,0 +1,36 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="relative p-section">
+  <div class="top-poligon">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image">
+  </div>
+  <div class="relative">
+    <div class="title mb-10 sm:mb-15">Новости</div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <% for(let i = 0; i < 10; i++) { %>
+      <a href="javascript:;" class="p-4 pb-6 sm:pb-10 card rounded-4xl flex flex-col gap-6 sm:gap-8 btn-group">
+        <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
+          <img src="img/test/test-<%= i + 1 %>.jpg" alt="" class="absolute-fit object-cover">
+        </div>
+        <div class="sm:px-2 flex-grow flex flex-col items-start">
+          <div class="font-alt text-1.5xl leading-xs font-semibold">
+            Экологические документы
+            и регламенты
+          </div>
+          <div class="mt-4 sm:mt-5 mb-5 sm:mb-9 opacity-80 line-clamp-4 max-sm:text-sm">
+            Деятельность по охране окружающей
+            среды и обеспечению экологической
+            безопасности подлежит обязательному
+            документированию. При отсутствии...
+          </div>
+          <button class="mt-auto btn btn-fill btn-gradient rounded-xl">Читать</button>
+        </div>
+      </a>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+
+<%= require('./html-includes/footer.html')() %>

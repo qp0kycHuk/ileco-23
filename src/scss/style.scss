@@ -85,12 +85,15 @@ body {
   }
 
   .btn-gradient {
-    background:
+    --tw-btn-color:
       linear-gradient(90deg, theme('colors.sec / 30%') 0%, theme('colors.sec / 0%') 100%), #0A3140;
 
     @media(hover) {
-      &:hover {
-        background:
+      // temp
+
+      &:hover,
+      &:is(.btn-group:hover &) {
+        --tw-btn-color:
           linear-gradient(90deg, theme('colors.sec / 30%') 0%, theme('colors.sec / 0%') 100%), color-mix(in srgb, #0A3140 50%, theme('colors.sec'));
 
       }
