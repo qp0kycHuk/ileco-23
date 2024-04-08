@@ -2,14 +2,14 @@
 
 <section class="relative p-section">
   <div class="top-poligon">
-    <img src="img/poligon-top.png" alt="" class="top-poligon-image">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image" data-animation="fadeInRight">
   </div>
   <div class="relative">
-    <div class="title mb-10 sm:mb-15">Новости</div>
+    <div class="title mb-10 sm:mb-15" data-animation="fadeInUp">Новости</div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <% for(let i = 0; i < 10; i++) { %>
-      <a href="javascript:;" class="p-4 pb-6 sm:pb-10 card rounded-4xl flex flex-col gap-6 sm:gap-8 btn-group">
+      <a href="javascript:;" class="p-4 pb-6 sm:pb-10 card rounded-4xl flex flex-col gap-6 sm:gap-8 btn-group" data-animation="fadeInUp">
         <div class="ratio ratio-[362/226] rounded-3xl overflow-hidden">
           <img src="img/test/test-<%= i + 1 %>.jpg" alt="" class="absolute-fit object-cover">
           <div class="absolute left-4 bottom-4 bg-primary rounded-full px-4 py-2 sm:px-6 sm:py-3">
@@ -31,6 +31,33 @@
         </div>
       </a>
       <% } %>
+    </div>
+
+    <div class="mt-14 flex gap-1 sm:gap-4">
+      <button class="btn btn-fill btn-gradient btn-icon btn-[40px] rounded-xl">
+        <span class="font-base ">1</span>
+      </button>
+      <button class="btn btn-contur btn-sec btn-icon btn-[40px] rounded-xl border-default/20">
+        <span class="text-default opacity-60 font-base font-normal">2</span>
+      </button>
+      <button class="btn btn-contur btn-sec btn-icon btn-[40px] rounded-xl border-default/20">
+        <span class="text-default opacity-60 font-base font-normal">3</span>
+      </button>
+      <button class="btn btn-contur btn-sec btn-icon btn-[40px] rounded-xl border-default/20 max-sm:hidden">
+        <span class="text-default opacity-60 font-base font-normal">4</span>
+      </button>
+      <button class="btn btn-contur btn-sec btn-icon btn-[40px] rounded-xl border-default/20 max-sm:hidden">
+        <span class="text-default opacity-60 font-base font-normal">5</span>
+      </button>
+      <div class="self-end opacity-80">
+        ...
+      </div>
+      <button class="btn btn-contur btn-sec btn-icon btn-[40px] rounded-xl border-default/20">
+        <span class="text-default opacity-60 font-base font-normal">26</span>
+      </button>
+      <button class="btn btn-sec btn-icon btn-[40px] rounded-xl ">
+        <c-icon class="icon text-default opacity-60 text-lg" href="img/icons.svg#to-right"></c-icon>
+      </button>
     </div>
   </div>
 </section>

@@ -731,3 +731,8 @@ body:not(.scroll-top) .nav {
     border-radius: theme('borderRadius.2xl');
   }
 }
+
+[data-animation] {
+  opacity: 0;
+
+}
