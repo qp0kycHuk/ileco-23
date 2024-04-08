@@ -55,6 +55,7 @@
   </div>
 </section>
 
+<!-- Наши направления -->
 <section class="relative p-section">
   <div class="absolute inset-0 pointer-events-none overflow-hidden">
     <img src="img/sheets/group.png" alt="" data-parallax class="absolute sheet top-0 right-[-868px] max-sm:top-[-180px] -rotate-12">
@@ -84,60 +85,151 @@
       <% } %>
     </div>
 
-    <div class="mt-16 rounded-4xl bg-sand/20 px-10 py-12">
-      <div class="font-alt text-1.5xl font-semibold text-gradient uppercase">РАБОТАЕМ ПО ВСЕЙ РОССИИ</div>
-      <div class="mt-3 opacity-80">
-        Мы ведем услуги экологического сопровождения в каждом российском регионе
+    <div class="mt-6 lg:mt-16 rounded-4xl bg-sand/20 px-6 pb-65 pt-8 sm:px-10 sm:py-12 overflow-hidden relative">
+      <img src="img/russia.svg" alt="" class="absolute max-w-none left-1/2 max-sm:-ml-96 -top-24 sm:top-3/4 sm:-translate-y-1/2 sm:left-1/4">
+      <div class="relative">
+        <div class="font-alt text-1.5xl font-semibold text-gradient uppercase">РАБОТАЕМ ПО ВСЕЙ РОССИИ</div>
+        <div class="mt-3 opacity-80 max-sm:text-sm">
+          Мы ведем услуги экологического сопровождения в каждом российском регионе
+        </div>
       </div>
+
     </div>
 
-    <div class="mt-16 flex gap-20">
+    <div class="mt-8 lg:mt-16 flex max-lg:flex-col sm:items-center gap-8 lg:gap-20">
       <div>
-        <div class="opacity-80">
+        <div class="opacity-80 max-sm:text-sm">
           Меня зовут Андрей Човен. Я работаю в природоохранной отрасли с 2008 года. С самого начала работы я видел, с какими трудностями сталкиваются предприятия при подготовке и согласовании экологической документации. В 2010 году я понял, что могу превратить сложное взаимодействие с природоохранными органами в комфортный сервис, и создал свою компанию.
         </div>
-        <div class="my-10 font-semibold">
+        <div class="my-6 sm:my-10 font-semibold max-sm:text-sm">
           В 2010 году я понял, что могу превратить сложное взаимодействие с природоохранными органами в комфортный сервис
         </div>
-        <div class="opacity-80">
+        <div class="opacity-80 max-sm:text-sm">
           Собрал команду экспертов, которые работали «по разные стороны баррикад» в сфере экологии и знают процесс изнутри. Проектировщики, экологи и юристы моей команды детально понимают, какие требования предъявляют государственные контролирующие органы и насколько сложно предприятиям эти требования выполнять.
         </div>
       </div>
-      <div class="w-[500px] ratio ratio-[500/354] shrink-0 rounded-4xl overflow-hidden">
-        <img src="img/about-dude.png" alt="" class="absolute-fit object-cover">
+      <div class="relative shrink-0 ">
+        <div class="w-full sm:w-[500px]  ratio ratio-[500/354] rounded-4xl overflow-hidden">
+          <img src="img/about-dude.png" alt="" class="absolute-fit object-cover">
+        </div>
+
+
+        <div class="p-px poligon-mask absolute -left-10 -bottom-20 backdrop-blur max-sm:hidden" data-parallax="200">
+          <img src="img/dude-poligon.png" alt="" class="max-sm:w-40">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Наша команда -->
 <section class="relative p-section">
-  <div class="title mb-8">Наша команда</div>
-  <div class="opacity-80 mb-10">
-    42 квалифицированных специалиста в области охраны труда и экологии и широкий спектр услуг <br>
-    позволяют нам оставаться востребованными на рынке уже более 10 лет
+  <div class="absolute w-full bottom-0 left-0 h-[3000px] pointer-events-none overflow-hidden -z-[1]">
+    <img src="img/poligon-top.png" alt="" class="absolute -right-1/2 lg:right-0 bottom-80 lg:-bottom-80">
   </div>
+  <div class="relative">
+    <div class="title mb-5 sm:mb-8">Наша команда</div>
+    <div class="opacity-80 mb-5 sm:mb-10 max-sm:text-sm">
+      42 квалифицированных специалиста в области охраны труда и экологии и широкий спектр услуг <br class="max-lg:hidden">
+      позволяют нам оставаться востребованными на рынке уже более 10 лет
+    </div>
 
-  <div class="swiper team-slider -mx-3">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide w-1/4 px-3">
-        <div class="card rounded-4xl p-4">
-          <div class="ratio ratio-[258/224] shrink-0 rounded-4xl overflow-hidden">
-            <img src="img/test/test-4.jpg" alt="" class="absolute-fit object-cover">
+    <div class="relative">
+      <div class="swiper team-slider -my-10 py-10 -mx-3 ">
+        <div class="swiper-wrapper">
+          <% for(let i = 0; i < 10; i++) { %>
+          <div class="swiper-slide w-72 sm:w-1/2 lg:w-1/4 px-2 sm:px-3">
+            <div class="card rounded-4xl p-4">
+              <div class="ratio ratio-[258/224] shrink-0 rounded-4xl overflow-hidden">
+                <img src="img/test/test-4.jpg" alt="" class="absolute-fit object-cover">
+              </div>
+              <div class="mt-5 px-4">
+                <div class="sm:text-lg font-alt font-semibold text-gradient">Ковалевский Руслан</div>
+                <div class="mt-1 opacity-80 max-sm:text-sm">Лаборант</div>
+              </div>
+            </div>
           </div>
-          <div class="mt-5 px-4">
-            <div class="text-lg font-alt font-semibold text-gradient">Ковалевский Руслан</div>
-            <div class="mt-1 opacity-80">Лаборант</div>
-          </div>
+          <% } %>
         </div>
       </div>
 
+      <div class="absolute top-1/2 left-1 lg:right-full lg:mr-5 z-[2] max-sm:hidden -translate-y-1/2">
+        <button class="btn btn-icon btn-l1 btn-fill rounded-full shadow-lg team-slider-prev">
+          <c-icon class="icon text-default" href="img/icons.svg#to-left"></c-icon>
+        </button>
+      </div>
+
+      <div class="absolute top-1/2 right-1 lg:left-full lg:ml-5 z-[2] max-sm:hidden -translate-y-1/2">
+        <button class="btn btn-icon btn-l1 btn-fill rounded-full shadow-lg team-slider-next">
+          <c-icon class="icon text-default" href="img/icons.svg#to-right"></c-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  new Swiper('.team-slider', {
+    slidesPerView: 'auto',
+    navigation: {
+      prevEl: '.team-slider-prev',
+      nextEl: '.team-slider-next',
+    }
+
+  })
+</script>
+
+<!-- Наши преимущества -->
+<section class="p-section relative">
+  <div class="relative">
+    <div class="title mb-2 sm:mb-8">Наши преимущества</div>
+    <div class="opacity-80 mb-6 sm:mb-8  max-sm:text-sm">
+      По данным Росстата, предприятие ООО "ЭКО-23", отмечено как одно из лучших отрасли <br class="max-lg:hidden">
+      и внесено в рейтинг надежных предприятий
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+      <div class="card rounded-4xl py-10 px-8">
+        <div class="flex md:flex-col items-center md:items-start gap-4 md:gap-7">
+          <img src="img/features-archive.png" alt="" class="max-sm:w-16">
+          <div class="text-gradient font-alt font-semibold text-1.5xl">10 ЛЕТ</div>
+        </div>
+        <div class="mt-3 sm:mt-4 opacity-80 max-sm:text-sm">
+          разрабатываем экологическую
+          документацию и помогаем пройти
+          проверки без рисков
+        </div>
+      </div>
+      <div class="card rounded-4xl py-10 px-8">
+        <div class="flex md:flex-col items-center md:items-start gap-4 md:gap-7">
+          <img src="img/features-notebook.png" alt="" class="max-sm:w-16">
+          <div class="text-gradient font-alt font-semibold text-1.5xl">700+ ПРОВЕРОК</div>
+        </div>
+        <div class="mt-3 sm:mt-4 opacity-80 max-sm:text-sm">
+          проверок помогли пройти предприятиям
+          без штрафов и простаивания деятельности
+        </div>
+      </div>
+      <div class="card rounded-4xl py-10 px-8">
+        <div class="flex md:flex-col items-center md:items-start gap-4 md:gap-7">
+          <img src="img/features-docs.png" alt="" class="max-sm:w-16">
+          <div class="text-gradient font-alt font-semibold text-1.5xl">
+            2600+ ПРОЕКТОВ
+          </div>
+        </div>
+        <div class="mt-3 sm:mt-4 opacity-80 max-sm:text-sm">
+          успешно разработаны и прошли все
+          стадии согласования в государственных
+          органах
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+
 <!--  Аккредитованная лаборатория -->
 <section class="py-0 bg-primary/15 flex max-lg:flex-col items-center overflow-hidden">
-  <div class="p-section shrink-0">
+  <div class="p-section shrink-0 max-lg:w-full">
     <div class="title">
       Аккредитованная <br class="max-sm:hidden">
       лаборатория
@@ -149,17 +241,97 @@
     </div>
     <button class="mt-10 max-sm:w-full btn btn-fill btn-gradient rounded-xl">Получить каталог</button>
   </div>
-  <div class="lg:self-end max-sm:flex flex-col items-center max-sm:-mt-10 relative flex-grow">
-    <img src="img/credit.png" alt="" class="w-max max-w-[150%] sm:max-w-max ml-auto">
+  <div class="lg:self-end max-sm:flex flex-col items-center  relative flex-grow">
+    <img src="img/credit.png" alt="" class="w-max  sm:max-w-max ml-auto">
 
-
-    <div class="p-px poligon-mask absolute left-28 top-18 backdrop-blur max-sm:hidden" data-parallax="100">
+    <div class="p-px poligon-mask absolute right-0 bottom-0 backdrop-blur max-lg:hidden" data-parallax="100">
       <img src="img/dude-poligon.png" alt="" class="max-sm:w-40">
     </div>
     <img src="img/sheets/single-6.png" alt="" class="absolute left-0 sm:left-36 top-32" data-parallax="200">
-    <img src="img/sheets/single-3.png" alt="" class="absolute right-0 top-32 max-sm:hidden" loading="lazy" data-parallax="-200">
-    <img src="img/sheets/single-7.png" alt="" class="absolute left-1/2 -ml-12 sm:-ml-20 max-sm:w-24 bottom-8 sm:bottom-16" data-parallax="100">
+    <img src="img/sheets/single-3.png" alt="" class="absolute right-0 top-10 sm:top-32 max-sm:w-20" loading="lazy" data-parallax="-200">
+    <!-- <img src="img/sheets/single-7.png" alt="" class="absolute left-1/2 -ml-12 sm:-ml-20 max-sm:w-24 bottom-8 sm:bottom-16" data-parallax="100"> -->
   </div>
 </section>
+
+<!-- Согласование проектов -->
+<section class="p-section dude overflow-hidden">
+  <div class="dude-content">
+    <div class="title mb-3 sm:mb-5">Остались вопросы?</div>
+    <div class="opacity-80 max-sm:text-sm lg:text-1.5xl font-alt mb-8 sm:mb-14">
+      Оставьте заявку и наш менеджер свяжется с вами
+    </div>
+
+    <div class="w-full sm:w-96">
+      <label class="block">
+        <div class="text-sm font-semibold mb-1">Ваше имя</div>
+        <input type="text" class="input input-sec rounded-xl w-full" placeholder="Напишите имя...">
+      </label>
+
+      <label class="block mt-6">
+        <div class="text-sm font-semibold mb-1">Ваш телефон</div>
+        <input type="tel" class="input input-sec rounded-xl w-full" placeholder="+7 ( _ _ _ ) _ _ - _ _ - _ _ _ ">
+      </label>
+    </div>
+
+    <button class="btn btn-fill btn-gradient rounded-xl px-10 mt-8" type="submit">Отправить</button>
+
+    <div class="mt-11 opacity-60 text-xs sm:text-sm">
+      Нажимая на кнопку “Отправить”, Вы соглашаетесь <br>
+      на обработку персональных данных
+    </div>
+  </div>
+  <div class="dude-image ">
+    <div class="dude-image-picture ratio ratio-[545/490]">
+      <img src="img/question-dude.png" alt="" class="absolute-fit object-cover">
+    </div>
+
+    <div class="card rounded-4xl px-3 py-4 sm:p-6 absolute left-0 sm:-left-12 -top-10 sm:top-24" data-parallax="-100">
+      <div class="flex items-center gap-3">
+        <div class="size-8 sm:size-11 flex rounded-full bg-primary text-white">
+          <c-icon class="icon m-auto text-lg sm:text-2xl" href="img/icons.svg#user"></c-icon>
+        </div>
+        <div>
+          <div class="font-alt leading-xs font-semibold max-sm:text-xs">Виталий</div>
+          <div class="font-alt leading-xs text-2xs sm:text-sm mt-1">+7 918 000 00 00</div>
+        </div>
+      </div>
+      <div class="mt-2 sm:mt-4 text-2xs sm:text-sm font-alt opacity-80">
+        - Сколько времени действует <br>
+        паспорт для отходов?
+      </div>
+      <div class="mt-2 sm:mt-4 text-2xs sm:text-sm font-alt opacity-80">
+        - Сейчас расскажем...
+      </div>
+    </div>
+    <div class="card rounded-4xl px-3 py-4 sm:p-6 absolute right-0 sm:-right-17 -bottom-20" data-parallax>
+      <div class="flex items-center gap-3">
+        <div class="size-8 sm:size-11 flex rounded-full bg-sec text-white">
+          <c-icon class="icon m-auto text-lg sm:text-2xl" href="img/icons.svg#user"></c-icon>
+        </div>
+        <div>
+          <div class="font-alt leading-xs font-semibold max-sm:text-xs">Виталий</div>
+          <div class="font-alt leading-xs text-2xs sm:text-sm mt-1">+7 918 000 00 00</div>
+        </div>
+      </div>
+      <div class="mt-2 sm:mt-4 text-2xs sm:text-sm font-alt opacity-80">
+        - Сколько времени действует <br>
+        паспорт для отходов?
+      </div>
+      <div class="mt-2 sm:mt-4 text-2xs sm:text-sm font-alt opacity-80">
+        - Сейчас расскажем...
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Полигон справа -->
+<section class="relative -z-[1] pointer-events-none py-[100lvh] -my-[100lvh]">
+  <div class="absolute inset-0" data-parallax="-150">
+    <img src="img/poligon-right.png" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 max-w-[80%]">
+  </div>
+</section>
+
+<%= require('./html-includes/partners.html')() %>
 
 <%= require('./html-includes/footer.html')() %>
