@@ -740,3 +740,12 @@ body:not(.scroll-top) .nav {
   opacity: 0;
 
 }
+
+.news-item {
+  border-radius: theme('borderRadius.4xl');
+  overflow     : hidden;
+
+  @media(max-width:theme('screens.sm')) {
+    border-radius: theme('borderRadius.2xl');
+  }
+}

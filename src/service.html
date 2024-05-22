@@ -1,0 +1,43 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="relative p-section">
+  <div class="top-poligon">
+    <img src="img/poligon-top.png" alt="" class="top-poligon-image" data-animation="fadeInRight">
+  </div>
+  <div class="relative">
+    <div class="title mb-10 sm:mb-15" data-animation="fadeInUp">Лабораторные исследования</div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+      <% for(let i = 0; i < 10; i++) { %>
+      <div class="news-item card flex flex-col">
+        <div class="ratio ratio-[290/176] bg-default/5">
+          <img src="img/old.test/test-1.jpg" alt="" class="absolute-fit object-cover">
+        </div>
+        <div class="px-2 py-4 sm:p-6 grow flex flex-col">
+          <div class="sm:text-1.5xl font-semibold font-alt mb-auto">Воздух</div>
+          <button class="btn btn-gradient btn-fill mt-5 sm:mt-10 rounded-xl">
+            <span class="max-sm:text-sm">Подробнее</span>
+          </button>
+        </div>
+      </div>
+      <div class="news-item card flex flex-col">
+        <div class="ratio ratio-[290/176] bg-default/5">
+          <img src="img/old.test/test-2.jpg" alt="" class="absolute-fit object-cover">
+        </div>
+        <div class="px-2 py-4 sm:p-6 grow flex flex-col">
+          <div class="sm:text-1.5xl font-semibold font-alt mb-auto">
+            Разработка ПМ
+            ООС
+          </div>
+          <button class="btn btn-gradient btn-fill mt-5 sm:mt-10 rounded-xl">
+            <span class="max-sm:text-sm">Подробнее</span>
+          </button>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+
+<%= require('./html-includes/footer.html')() %>
