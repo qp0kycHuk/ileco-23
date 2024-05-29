@@ -681,6 +681,19 @@ body:not(.scroll-top) .nav {
   }
 }
 
+.dialog-review {
+  border-radius: theme('borderRadius.4xl');
+  background   : theme('colors.l3');
+  width        : 596px;
+  max-width    : 100%;
+  padding      : 40px 32px;
+
+  @media(max-width:theme('screens.sm')) {
+    border-radius: theme('borderRadius.2xl');
+    padding      : 32px 15px;
+  }
+}
+
 .dialog-form {
   border-radius: theme('borderRadius.4xl');
   background   : theme('colors.l3');
