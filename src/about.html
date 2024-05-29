@@ -123,7 +123,7 @@
 </section>
 
 <!-- Наша команда -->
-<section class="relative p-section">
+<section class="relative p-section overflow-hidden">
   <div class="absolute w-full bottom-0 left-0 h-[3000px] pointer-events-none overflow-hidden -z-[1]">
     <img src="img/poligon-top.png" alt="" class="absolute -right-1/2 lg:right-0 bottom-80 lg:-bottom-80">
   </div>
@@ -135,7 +135,7 @@
     </div>
 
     <div class="relative" data-animation="fadeInUp">
-      <div class="swiper team-slider -my-10 py-10 -mx-3 ">
+      <div class="swiper team-slider -mx-3 slider-hide-slides overflow-visible">
         <div class="swiper-wrapper">
           <% for(let i = 0; i < 10; i++) { %>
           <div class="swiper-slide w-72 sm:w-1/2 lg:w-1/4 px-2 sm:px-3">
@@ -153,14 +153,14 @@
         </div>
       </div>
 
-      <div class="absolute top-1/2 left-1 lg:right-full lg:mr-5 z-[2] max-sm:hidden -translate-y-1/2">
-        <button class="btn btn-icon btn-l1 btn-fill rounded-full shadow-lg team-slider-prev">
+      <div class="absolute top-1/2 max-lg:left-1 lg:right-full lg:mr-5 z-[2] max-sm:hidden -translate-y-1/2">
+        <button class="btn btn-icon btn-[#DCE2F1] btn-fill rounded-full shadow-lg team-slider-prev">
           <c-icon class="icon text-default" href="img/icons.svg#to-left"></c-icon>
         </button>
       </div>
 
-      <div class="absolute top-1/2 right-1 lg:left-full lg:ml-5 z-[2] max-sm:hidden -translate-y-1/2">
-        <button class="btn btn-icon btn-l1 btn-fill rounded-full shadow-lg team-slider-next">
+      <div class="absolute top-1/2 max-lg:right-1 lg:left-full lg:ml-5 z-[2] max-sm:hidden -translate-y-1/2">
+        <button class="btn btn-icon btn-[#DCE2F1] btn-fill rounded-full shadow-lg team-slider-next">
           <c-icon class="icon text-default" href="img/icons.svg#to-right"></c-icon>
         </button>
       </div>
@@ -170,6 +170,8 @@
 <script>
   new Swiper('.team-slider', {
     slidesPerView: 'auto',
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
     navigation: {
       prevEl: '.team-slider-prev',
       nextEl: '.team-slider-next',
