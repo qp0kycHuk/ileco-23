@@ -502,12 +502,15 @@ body:not(.scroll-top) .nav {
 }
 
 .tabs {
-  display        : flex;
-  justify-content: space-between;
-  border-bottom  : 1px solid theme('colors.default / 20%');
-  position       : relative;
-  overflow       : auto;
-  gap            : 16px;
+  display      : flex;
+  border-bottom: 1px solid theme('colors.default / 20%');
+  position     : relative;
+  overflow     : auto;
+  gap          : 32px;
+
+  @media(max-width:theme('screens.sm')) {
+    gap: 16px;
+  }
 
   &-item {
     padding-top   : 30px;
