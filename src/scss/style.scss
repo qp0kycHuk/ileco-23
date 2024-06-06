@@ -336,8 +336,9 @@ body:not(.scroll-top) .nav {
       }
 
       @media(max-width:theme('screens.sm')) {
-        left: -132px;
-        top : -112px;
+        width: 150%;
+        left : -38%;
+        top  : -3%;
       }
     }
   }
@@ -484,7 +485,12 @@ body:not(.scroll-top) .nav {
 
       @media(max-width:1800px) {
         right: auto;
-        left : calc(50% - 204px);
+      }
+
+      @media(max-width:theme('screens.lg')) {
+        right: 0;
+        left : auto;
+        width: 600px;
       }
 
       @media(max-width:theme('screens.sm')) {
