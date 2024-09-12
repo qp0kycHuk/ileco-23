@@ -828,3 +828,79 @@ body:not(.scroll-top) .nav {
   }
 
 }
+
+.notification {
+  visibility   : visible;
+  width        : 320px;
+  padding      : 8px;
+  background   : theme('colors.primary');
+  color        : #fff;
+  border-radius: 12px;
+  transform    : translateX(-120%);
+  opacity      : 0;
+  animation    : show-notification .5s .25s ease forwards;
+  display      : block;
+  max-width    : 100%;
+
+  &:not(.toggle-active) {
+    transform: translateX(0%);
+    opacity  : 1;
+    animation: show-notification .5s .1s ease forwards reverse;
+  }
+
+  &-medal {
+    background: linear-gradient(86.29deg, #FFDD7E 0%, rgba(255, 221, 126, 0) 56.55%), #AB5D4E;
+    color     : #fff;
+    position  : relative;
+    overflow  : hidden;
+
+    &::after {
+      content   : "";
+      position  : absolute;
+      left      : 0;
+      height    : 130%;
+      top       : -15%;
+      width     : 100%;
+      background: linear-gradient(60deg, rgba(0, 0, 0, 0) 20%, #fff 50%, rgba(0, 0, 0, 0) 80%);
+      transition: 0s;
+      transform : translateX(-100%);
+      animation : blick 3s infinite both
+    }
+  }
+
+  &-wrapper {
+    position      : fixed;
+    bottom        : 16px;
+    left          : 16px;
+    right         : 16px;
+    z-index       : theme("zIndex.5");
+    display       : flex;
+    flex-direction: column-reverse;
+    gap           : 16px;
+    visibility    : hidden;
+  }
+}
+
+@keyframes show-notification {
+  from {
+    transform: translateX(-120%);
+    opacity  : 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity  : 1;
+  }
+}
+
+
+@keyframes blick {
+  0% {
+    transform: translateX(-100%)
+  }
+
+  30%,
+  100% {
+    transform: translateX(100%)
+  }
+}
