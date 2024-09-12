@@ -32,6 +32,7 @@ function init() {
   gsap.registerPlugin(ScrollTrigger)
 
   scrollInit()
+  hover3dInit()
 
   // parallax
   {
@@ -92,6 +93,45 @@ function scrollInit() {
     instance.then(() => {
       gsap.set(element, {
         transform: 'none',
+      })
+    })
+  })
+}
+
+function hover3dInit() {
+  const limits = 15.0
+  const cards = document.querySelectorAll('.hover3d-wrap')
+
+  cards.forEach((card) => {
+    const item = card.querySelector('.hover3d-target') as HTMLElement
+
+    card.addEventListener('mousemove', (e) => {
+      const event = e as MouseEvent
+      const rect = (event.target as HTMLElement)?.getBoundingClientRect()
+      const x = event.clientX - rect.left
+      const y = event.clientY - rect.top
+      const offsetX = x / rect.width
+      const offsetY = y / rect.height
+
+      const rotateY = offsetX * (limits * 2) - limits
+      const rotateX = offsetY * (limits * 2) - limits
+
+      gsap.to(item, {
+        ['--offset']: rotateX + rotateY + '%',
+        ['--rotate-x']: rotateX,
+        ['--rotate-y']: rotateY,
+        rotateX: -rotateX,
+        rotateY: rotateY,
+      })
+    })
+
+    card.addEventListener('mouseleave', () => {
+      gsap.to(item, {
+        ['--offset']: '0%',
+        ['--rotate-x']: 0,
+        ['--rotate-y']: 0,
+        rotateX: 0,
+        rotateY: 0,
       })
     })
   })
