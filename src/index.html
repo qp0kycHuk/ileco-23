@@ -271,7 +271,7 @@
 </section>
 
 <div class="notification-wrapper">
-  <a href="javascript:;" class="notification notification-medal relative toggle-active" data-toggle-cover>
+  <div class="notification notification-medal relative toggle-active" data-toggle-cover>
     <div class="flex items-center gap-3">
       <img src="img/medal.png" alt="" class="size-16">
       <div class="font-semibold uppercase">
@@ -279,11 +279,13 @@
         отрасли
       </div>
 
-      <button class="btn btn-text absolute right-3 top-3" data-toggle-link>
-        <c-icon class="icon text-xs" href="img/icons.svg#cross"></c-icon>
-      </button>
     </div>
-  </a>
+    <a href="javascript:;" class="absolute-fit"></a>
+
+    <button class="btn btn-text absolute right-3 top-3 hover:-translate-y-0.5" data-toggle-link>
+      <c-icon class="icon text-xs" href="img/icons.svg#cross"></c-icon>
+    </button>
+  </div>
 </div>
 
 <%= require('./html-includes/partners.html')() %>
